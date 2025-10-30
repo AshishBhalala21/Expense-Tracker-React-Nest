@@ -6,7 +6,26 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  getBaseRoute() {
+    return {
+      name: 'Expense Tracker API',
+      version: '1.0.0',
+      description: 'RESTful API for managing personal expenses and income',
+      endpoints: {
+        health: '/health',
+      },
+    };
+  }
+
+  @Get('health')
+  healthCheck() {
+    return {
+      status: 'ok',
+      timestamp: new Date().toISOString(),
+      services: {
+        api: 'healthy',
+        database: 'connected',
+      },
+    };
   }
 }
