@@ -1,0 +1,103 @@
+# Dependencies
+**/node_modules
+/.pnp
+.pnp.js
+
+# Production build
+**/dist
+**/build
+**/.next
+**/.vercel
+**/.turbo
+
+# Testing
+**/coverage
+**/.nyc_output
+**/.jest
+**/__tests__/*.js
+**/__snapshots__
+
+# Environment Variables
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+**/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDE - Other
+.idea/
+*.sublime-*
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Prisma
+/generated
+**/generated/prisma
+**/.prisma
+
+# React/Next.js specific
+**/.cache/
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# NestJS specific
+**/dist
+**/node_modules
+**/.webpack
+**/.serverless
+**/.esbuild
+
+# Temporary files
+.temp
+.tmp
+.cache
+.eslintcache
+
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+.DS_Store
+*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
